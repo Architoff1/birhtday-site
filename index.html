@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Happy Birthday ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -9,19 +9,20 @@
 
 <div class="container">
   <h1>Happy Birthday ❤️</h1>
-  <p>A small surprise, made just for you</p>
-  <button onclick="playSong()">▶ Play</button>
+  <p>A song made just for you</p>
 
-  <div id="message" class="hidden">
-    <p>You’ve always been stronger than you know.</p>
-    <p>Thank you for being my sister.</p>
-    <p>May your days be full of light ✨</p>
+  <button onclick="startExperience()">▶ Play</button>
+
+  <div id="lyrics"></div>
+
+  <div class="slideshow">
+    <img id="slide" src="images/pic1.jpg">
   </div>
 </div>
 
 <audio id="song" src="song.mp3"></audio>
-
 <script src="script.js"></script>
+
 </body>
 </html>
 
