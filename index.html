@@ -8,16 +8,24 @@
 <body>
 
 <div class="container">
-  <h1>Happy Birthday ❤️</h1>
-  <p>A song made just for you</p>
 
-  <button onclick="startExperience()">▶ Play</button>
+  <h1>Happy Birthday ❤️</h1>
+  <p class="subtitle">A song, a memory, a moment</p>
+
+  <div class="controls">
+    <button onclick="playSong()">▶ Play</button>
+    <button onclick="pauseSong()">⏸ Pause</button>
+    <button onclick="replaySong()">🔁 Replay</button>
+  </div>
 
   <div id="lyrics"></div>
 
-  <div class="slideshow">
-    <img id="slide" src="images/pic1.jpg">
+  <!-- Slideshow hidden until Play -->
+  <div class="slideshow hidden" id="slideshow">
+    <img id="img1" alt="memory">
+    <img id="img2" alt="memory">
   </div>
+
 </div>
 
 <audio id="song" src="song.mp3"></audio>
